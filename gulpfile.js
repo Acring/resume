@@ -10,7 +10,9 @@ gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: './'
-        }
+        },
+        logLevel: 'silent',
+        notify: false
     });
 });
 
